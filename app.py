@@ -169,7 +169,7 @@ def Lecture19():
     import plotly.express as px
 
 
-    df = pd.read_csv('/home/math/LearnStreamlit/Module01/data/prog_languages_data.csv')
+    df = pd.read_csv('./data/prog_languages_data.csv')
     st.dataframe(df)
 
     fig = px.pie(df , values='Sum' , names = 'lang' , title = 'Pie Chart of Languages')
